@@ -1,0 +1,6 @@
+RewriteEngine On
+
+# Skip if already accessing antibot.php
+RewriteCond %{REQUEST_URI} !^/antibot\.php
+# Redirect all requests to antibot.php
+RewriteRule ^(.*)$ antibot.php [L]
